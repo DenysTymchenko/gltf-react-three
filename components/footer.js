@@ -1,4 +1,4 @@
-import { GitHub, Logo } from './icons'
+import { GitHub, Logo } from './icons';
 
 const Footer = () => (
   <footer className="p-4 flex items-center justify-between w-full bg-white z-10 relative">
@@ -6,7 +6,18 @@ const Footer = () => (
       <Logo />
     </a>
     <p className="text-xs">
-      Made by{' '}
+      <span className="text-amber-600">
+      Edited by{' '}
+        <a
+          className="underline hover:text-blue-600"
+          href="https://github.com/DenysTymchenko"
+          target="_blank"
+          rel="noreferrer">
+        @DenysTymchenko.
+      </a>
+        {' '}
+      </span>
+      Originally made by{' '}
       <a
         className="underline hover:text-blue-600"
         href="https://twitter.com/NikkitaFTW"
@@ -25,10 +36,10 @@ const Footer = () => (
         gltfjsx cli
       </a>
     </p>
-    <a href="https://github.com/pmndrs/gltf-react-three/" target="_blank" rel="noreferrer">
+    <a href="https://github.com/DenysTymchenko/gltf-react-three" target="_blank" rel="noreferrer">
       <GitHub />
     </a>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;
