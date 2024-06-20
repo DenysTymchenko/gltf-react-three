@@ -8,7 +8,7 @@ import FileDrop from '../components/fileDrop';
 import Footer from '../components/footer';
 import useStore from '../utils/store';
 import { isGlb, isGltf, isZip } from '../utils/isExtension';
-import { loadFileAsArrayBuffer, stringToArrayBuffer } from '../utils/buffers';
+import { loadFileAsArrayBuffer } from '../utils/buffers';
 
 const Loading = () => <p className="text-4xl font-bold">Loading ...</p>;
 

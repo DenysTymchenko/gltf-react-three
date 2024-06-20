@@ -1,18 +1,18 @@
-import React, { useEffect, useMemo, useCallback, startTransition } from 'react'
-import copy from 'clipboard-copy'
+import React, { useEffect, useMemo, startTransition } from 'react'
+// import copy from 'clipboard-copy'
 import saveAs from 'file-saver'
 import { Leva, useControls, button } from 'leva'
-import toast from 'react-hot-toast'
+// import toast from 'react-hot-toast'
 import { isGlb } from '../utils/isExtension'
 import useSandbox from '../utils/useSandbox'
 import Viewer from './viewer'
-import Code from './code'
+// import Code from './code'
 import useStore from '../utils/store'
 
 const Result = () => {
-  const { buffers, fileName, scene, code, createZip, generateScene, animations } = useStore()
+  const { buffers, fileName, scene, code, generateScene } = useStore()
 
-  const [config, setConfig] = useControls(() => ({
+  const [config] = useControls(() => ({
   //   types: { value: false, hint: 'Add Typescript definitions' },
   //   shadows: { value: true, hint: 'Let meshes cast and receive shadows' },
     // instance: { value: false, hint: ' Instance re-occuring geometry' },
@@ -65,9 +65,9 @@ const Result = () => {
     })
   }, [config])
 
-  const download = useCallback(async () => {
-    createZip({ sandboxCode })
-  }, [sandboxCode])
+  // const download = useCallback(async () => {
+  //   createZip({ sandboxCode })
+  // }, [sandboxCode])
 
   const exports = useMemo(() => {
     const temp = {}

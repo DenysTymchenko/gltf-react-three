@@ -1,4 +1,4 @@
-import  {Highlight, defaultProps, themes } from 'prism-react-renderer'
+import { Highlight, defaultProps, themes } from 'prism-react-renderer';
 
 const Code = ({ children }) => {
   return (
@@ -20,7 +20,7 @@ const Code = ({ children }) => {
         </pre>
       )}
     </Highlight>
-  )
-}
+  );
+};
 
-export default Code
+export default Code;
