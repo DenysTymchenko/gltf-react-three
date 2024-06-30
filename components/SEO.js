@@ -8,15 +8,15 @@ const SEO = () => (
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <title>GLTF &ndash;&gt; React Three Fiber </title>
+    <title>3D Models Previewer (glb, gltf)</title>
     <meta
       name="description"
-      content="Easily convert GLTF models into React Three Fiber components to use in your projects"
+      content="Previewer for glb, gltf model"
     />
-    <meta name="og:title" content="GLTF -> React Three Fiber" />
+    <meta name="og:title" content="3D Models Previewer (glb, gltf)" />
     <meta
       name="og:description"
-      content="Easily convert GLTF models into React Three Fiber components to use in your projects"
+      content="Previewer for glb, gltf model"
     />
     <meta
       name="og:image"
