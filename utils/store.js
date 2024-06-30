@@ -24,7 +24,8 @@ const useStore = create((set, get) => ({
   },
   generateScene: async (config) => {
     const { fileName: rawFileName, buffers } = get()
-    const fileName = config.pathPrefix && config.pathPrefix !== '' ? `${config.pathPrefix}/${rawFileName}` : rawFileName
+    const fileName = rawFileName
+    console.log(fileName)
     let result
     if (buffers.size !== 1) {
       const loadingManager = new THREE.LoadingManager()
@@ -76,8 +77,8 @@ const useStore = create((set, get) => ({
     set({
       code,
       animations: !!result.animations.length,
+      scene: result.scene 
     })
-    if (!get().scene) set({ scene: result.scene })
   },
 }))
 
