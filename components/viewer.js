@@ -25,7 +25,7 @@ export default function Viewer({ shadows, contactShadow, autoRotate, environment
 
   return (
     <Canvas
-      gl={{ preserveDrawingBuffer: true }}
+      //gl={{ preserveDrawingBuffer: true }}
       shadows
       dpr={[1, 1.5]}
       camera={{ position: [0, 0, 150], fov: 50 }}
